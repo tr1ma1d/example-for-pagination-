@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="filters">
+        <label for="filter">Filter by Title:</label>
+        <input type="text" id="filter" placeholder="Search by title...">
+    </div>
+
+    <div class="catalog">
+        <!-- Cards will be dynamically loaded here -->
+    </div>
+
+    <div class="pagination">
+        <button id="prev" disabled>Prev</button>
+        <span id="page-num">Page 1</span>
+        <button id="next">Next</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
